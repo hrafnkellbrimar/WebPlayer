@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The latest and greatest music player</title>
+    <!-- TODO: a link to a .css file containing default styles for the music player -->
+    <!-- TODO: jQuery CDN reference -->
+    <!-- TODO: Modernizr reference -->
+    <!-- TODO: your MusicPlayer jQuery plugin reference!!!! -->
+  </head>
+  <body>
+    <div id="thePlayer"></div> <!-- this element will host the player!! -->
+    
+    <p>The latest and greatest music player</p>
+    
+    <script type="text/javascript" >
+      
+      $(document).ready( function( ) {
+      
+      // Note: this version assumes a JavaScript array of songs, but
+      // the other approach is also acceptable
+      var playlist = [ "http://path.to/first_song.mp3",
+      "http://path.to/second_song.mp3",
+      "http://path.to/third_song.mp3" ];
+      
+      $("#thePlayer").musicPlayer( playlist );
+      // Optionally, the function should accept an object containing optional values, 
+      // such as a boolean "autostart" value, i.e. if the player should start playing
+      // immediately etc.
+      });
+      
+    </script>
+  </body>
+</html>
